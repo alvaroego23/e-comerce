@@ -1,6 +1,6 @@
 <div class="container mb-5">
     <!--seccion 1 -->
-    <div class="row justify-content-evenly">
+    <div class="row justify-content-evenly mt-5 mb-5">
         <div class="col-6 position-relative">
             <img class="img-fluid  " src="../../../assets/recursos/recursos/main/slider-1.jpg" style="height: 100%;"
                 alt="" srcset="">
@@ -19,33 +19,41 @@
         </div>
     </div>
     <!--seccion 2-->
-    <div class="row justify-content-evenly text-center mt-2" style=" border: var(--bs-secondary) 1px dashed;">
-        <div class="col-3">
-            <img class=" img-fluid" src="../../../assets/recursos/recursos/main/baby.png" alt="">
-            <h6 class="text-primary">Baby & Toddler</h6>
+    <div class="row justify-content-evenly text-center mt-5 mb-5" style=" border: var(--bs-secondary) 1px dashed;">
+        <div class="col-3 my-2">
+            <a href="/productos/babys" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/baby.png" alt="">
+                <h6 class="text-primary mt-2">Baby & Toddler</h6>
+            </a>
         </div>
-        <div class="col-3">
-            <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girl.png" alt="">
-            <h6 class="text-primary">For Girls</h6>
+        <div class="col-3 my-2">
+            <a href="/productos/girls" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girl.png" alt="">
+                <h6 class="text-primary mt-2">For Girls</h6>
+            </a>
         </div>
-        <div class="col-3">
-            <img class=" img-fluid" src="../../../assets/recursos/recursos/main/boy.png" alt="">
-            <h6 class="text-primary">For Boys</h6>
+        <div class="col-3 my-2">
+            <a href="/productos/boys" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/boy.png" alt="">
+                <h6 class="text-primary mt-2">For Boys</h6>
+            </a>
         </div>
-        <div class="col-3">
-            <img class=" img-fluid" src="../../../assets/recursos/recursos/main/toys.png" alt="">
-            <h6 class="text-primary">Home & Toys</h6>
+        <div class="col-3 my-2">
+            <a href="/productos/home" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/toys.png" alt="">
+                <h6 class="text-primary mt-2"> & Toys</h6>
+            </a>
         </div>
     </div>
     <!--seccion 3-->
-    <div class="row mt-2 justify-content-center text-center">
+    <div class="row mt-5 justify-content-center text-center">
         <div class="col-12 mb-3">
             <h3 class="text-primary">NEW ARRIVALS</h3>
             <img class=" img-fluid" src="../../../assets/recursos/recursos/main/home-8.png" alt="">
         </div>
         <!--asaide-->
         <div class="col-4">
-            
+
             <!--buscador-->
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Search products...."
@@ -60,30 +68,40 @@
 
             <ul class="list-group list-group-flush mt-2" style=" border: var(--bs-secondary) 1px dashed;">
                 <li class="list-group-item d-flex justify-content-between">
-                    <h6 class="text-center text-primary ">For Babys</h6>
-                    <h6 class="text-center">(11)</h6>
+                    <a href="/productos/babys" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <h6 class="text-center text-primary ">For Babys</h6>
+                    </a>
+                    <h6 class="text-center">{{cant_babys}}</h6>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
-                    <h6 class="text-center text-primary ">For Boys</h6>
-                    <h6 class="text-center">(19)</h6>
+                    <a href="/productos/boys" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <h6 class="text-center text-primary ">For Boys</h6>
+                    </a>
+                    <h6 class="text-center">{{cant_boys}}</h6>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
-                    <h6 class="text-center text-primary ">For Girls</h6>
-                    <h6 class="text-center">(20)</h6>
+                    <a href="/productos/girls" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <h6 class="text-center text-primary ">For Girls</h6>
+                    </a>
+                    <h6 class="text-center">{{cant_girls}}</h6>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
-                    <h6 class="text-center text-primary ">For Home</h6>
-                    <h6 class="text-center">(14)</h6>
+                    <a href="/productos/home" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <h6 class="text-center text-primary ">For Home</h6>
+                    </a>
+                    <h6 class="text-center">{{cant_home}}</h6>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
-                    <h6 class="text-center text-primary ">For Play</h6>
-                    <h6 class="text-center">(8)</h6>
+                    <a href="/productos/Plays" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <h6 class="text-center text-primary ">For Plays</h6>
+                    </a>
+                    <h6 class="text-center">{{cant_plays}}</h6>
                 </li>
             </ul>
 
 
             <!--Best Sellers-->
-            <h5 class="text-start text-primary mt-5">BEST SELLERS</h5>
+            <h5 class="text-start text-primary mt-5 mb-5">BEST SELLERS</h5>
 
             <ul class="list-group list-group-flush mt-2" style=" border: var(--bs-secondary) 1px dashed;">
                 <li class="list-group-item d-flex justify-content-between">
@@ -162,63 +180,43 @@
         <!--producto-->
         <div class="col-8">
             <div class="row justify-content-center text-center">
-                <div class="col-4" >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girls-2-2-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For girls</h6>
-                    <h5 class="text-primary">Blue Blouse</h5>
-                    <h6 class="text-primary">$22.00</h6>
-                </div>
-                <div class="col-4 " >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/for-home-5-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For home</h6>
-                    <h5 class="text-primary">Brown Rainy Bag</h5>
-                    <h6 class="text-primary">$15.00</h6>
-                </div>
-                <div class="col-4 position-relative">
-                    <img class=" img-fluid " src="../../../assets/recursos/recursos/main/for-home-2-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For home</h6>
-                    <h5 class="text-primary">Rabbit Bag</h5>
-                    <button class="btn text-primary btn-light rounded-pill px-3 position-absolute top-0 end-0 mx-3 mt-2" type="button" disabled>OUT OF STOCK</button>               
-                    
-                </div>
-                <div class="col-4 " >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girls-9-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For girls</h6>
-                    <h5 class="text-primary">White Blouse</h5>
-                    <h6 class="text-primary">$17.00</h6>
-                </div>
-                <div class="col-4 position-relative">
-                    <img class=" img-fluid " src="../../../assets/recursos/recursos/main/for-home-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For home</h6>
-                    <h5 class="text-primary">Rainbow Pillow</h5>
-                    <button class="btn text-primary btn-light rounded-pill px-3 position-absolute top-0 end-0 mx-3 mt-2" type="button" disabled>OUT OF STOCK</button>               
-                    
-                </div>
-                <div class="col-4 " >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girls-6-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For girls</h6>
-                    <h5 class="text-primary">Pink Dress</h5>
-                    <h6 class="text-primary">$18.00</h6>
-                </div>
-                <div class="col-4 " >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/boys-8-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For boys</h6>
-                    <h5 class="text-primary">Patter Shirt</h5>
-                    <h6 class="text-primary">$28.00</h6>
-                </div>
-                <div class="col-4 " >
-                    <img class=" img-fluid" src="../../../assets/recursos/recursos/main/boys-9-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For boys</h6>
-                    <h5 class="text-primary">Shorts Whit Suspenders</h5>
-                    <h6 class="text-primary">$40.00</h6>
-                </div>
-                <div class="col-4 position-relative" >
-                    <img class=" img-fluid " src="../../../assets/recursos/recursos/main/girls-3-1-580x870.jpg" alt="">
-                    <h6 class="text-danger text-opacity-75">For girls</h6>
-                    <h5 class="text-primary">Denim Jacket</h5>
-                    <button class="btn text-primary btn-light rounded-pill px-3 position-absolute top-0 end-0 mx-3 mt-2" type="button" disabled>OUT OF STOCK</button>               
-                    
-                </div>
+                <ng-container *ngFor="let item of aleatorio">
+                    <ng-container *ngFor="let producto of productos">
+                        <ng-container *ngIf="this.producto.id === item ">
+                            <div class="col-4 mb-5" *ngIf="this.producto.Cantidad_stock > 0 ">                               
+                                <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                                    <div class="img-hover" style=" position: relative;  ">
+                                        <img style="position: relative; " class=" img-fluid"
+                                            src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
+                                        <img style="position: absolute; transition:all .5s ease-in-out; left: 0px; right: 100px;"
+                                            class=" img-t img-fluid" src="../../../assets/recursos/recursos/{{producto.Img2}}"
+                                            alt="">
+                                            
+                                    </div>
+                                <h6 class="text-danger text-opacity-75 mt-2 mb-2">{{producto.Categoria}}</h6>
+                                <h5 class="text-primary mt-2 mb-2">{{producto.nombre}}</h5>
+                                <h6 class="text-primary mt-2 mb-2">{{producto.Precio}}</h6>
+                                </a>
+                            </div>
+                            <div class="col-4 mb-5 position-relative" *ngIf="this.producto.Cantidad_stock === 0">
+                                <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                                    <div class="img-hover" style=" position: relative;  ">
+                                        <img style="position: relative; " class=" img-fluid"
+                                            src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
+                                        <img style="position: absolute; transition:all .5s ease-in-out; left: 0px; right: 100px;"
+                                            class=" img-t img-fluid" src="../../../assets/recursos/recursos/{{producto.Img2}}"
+                                            alt="">
+                                    </div>
+                                <h6 class="text-danger text-opacity-75 mt-2 mb-2">{{producto.Categoria}}</h6>
+                                <h5 class="text-primary mt-2 mb-2">{{producto.nombre}}</h5>
+                                <button
+                                    class="btn text-primary btn-light rounded-pill px-3 position-absolute top-0 end-0 mx-3 mt-2"
+                                    type="button" disabled>OUT OF STOCK</button>
+                                </a>
+                                </div>
+                        </ng-container>
+                    </ng-container>
+                </ng-container>
             </div>
         </div>
     </div>`
@@ -229,12 +227,22 @@
             <img class=" img-fluid" src="../../../assets/recursos/recursos/main/home-8.png" alt="">
         </div>
         <div class="col-12">
-            <div class="row justify-content-center">
-                <div class="col-2"><img class=" img-fluid" src="../../../assets/recursos/recursos/main/84981049_620107085435507_4260875787090681190_nlow.jpg" alt=""></div>
-                <div class="col-2"><img class=" img-fluid" src="../../../assets/recursos/recursos/main/85051426_2060664737412512_8458893884651247910_nlow.jpg" alt=""></div>
-                <div class="col-2"><img class=" img-fluid" src="../../../assets/recursos/recursos/main/85069033_185901059177965_6767010623440980864_nlow.jpg" alt=""></div>
-                <div class="col-2"><img class=" img-fluid" src="../../../assets/recursos/recursos/main/87339849_530805007551424_292323017375800029_nlow.jpg" alt=""></div>
-                <div class="col-2"><img class=" img-fluid" src="../../../assets/recursos/recursos/main/87413583_2660130777540405_5722961474466513534_nlow.jpg" alt=""></div>
+            <div class="row  my-5 justify-content-center">
+                <div class="col-2"><img class=" img-instagram img-fluid"
+                        src="../../../assets/recursos/recursos/main/84981049_620107085435507_4260875787090681190_nlow.jpg"
+                        alt=""></div>
+                <div class="col-2"><img class=" img-instagram img-fluid" 
+                        src="../../../assets/recursos/recursos/main/85051426_2060664737412512_8458893884651247910_nlow.jpg"
+                        alt=""></div>
+                <div class="col-2"><img class="img-instagram img-fluid"
+                        src="../../../assets/recursos/recursos/main/85069033_185901059177965_6767010623440980864_nlow.jpg"
+                        alt=""></div>
+                <div class="col-2"><img class="img-instagram img-fluid"
+                        src="../../../assets/recursos/recursos/main/87339849_530805007551424_292323017375800029_nlow.jpg"
+                        alt=""></div>
+                <div class="col-2"><img class="img-instagram img-fluid"
+                        src="../../../assets/recursos/recursos/main/87413583_2660130777540405_5722961474466513534_nlow.jpg"
+                        alt=""></div>
             </div>
         </div>
     </div>

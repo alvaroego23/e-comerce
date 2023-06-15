@@ -1,0 +1,73 @@
+<div class="container mb-5">
+    <!--seccion 1-->
+    <div class="row justify-content-evenly text-center mt-5 mb-5" style=" border: var(--bs-secondary) 1px dashed;">
+        <div class="col-3 my-2">
+            <a href="/productos/babys" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/baby.png" alt="">
+                <h6 class="text-primary mt-2">Baby & Toddler</h6>
+            </a>
+        </div>
+        <div class="col-3 my-2">
+            <a href="/productos/girls" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/girl.png" alt="">
+                <h6 class="text-primary mt-2">For Girls</h6>
+            </a>
+        </div>
+        <div class="col-3 my-2">
+            <a href="/productos/boys" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/boy.png" alt="">
+                <h6 class="text-primary mt-2">For Boys</h6>
+            </a>
+        </div>
+        <div class="col-3 my-2">
+            <a href="/productos/home" class="link-offset-2 link-underline link-underline-opacity-0">
+                <img class=" img-fluid" src="../../../assets/recursos/recursos/main/toys.png" alt="">
+                <h6 class="text-primary mt-2"> & Toys</h6>
+            </a>
+        </div>
+    </div>
+    <!--seccion 2-->
+    <div class="row mt-5 justify-content-center text-center">
+        <div class="col-12 mb-3">
+            <h3 class="text-primary">FOR BOYS</h3>
+            <img class=" img-fluid" src="../../../assets/recursos/recursos/main/home-8.png" alt="">
+        </div>
+        <div class="col-12">
+            <div class="row justify-content-evenly text-center">
+                <ng-container *ngFor="let producto of productos">
+                    <div class="col-3" *ngIf="this.producto.Cantidad_stock > 0">
+                        <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                            <div class="img-hover" style=" position: relative;  ">
+                                <img style="position: relative; " class=" img-fluid"
+                                    src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
+                                <img style="position: absolute; transition: all 300ms; left: 0px; right: 100px;"
+                                    class=" img-t img-fluid" src="../../../assets/recursos/recursos/{{producto.Img2}}"
+                                    alt="">
+                            </div>
+                        <h6 class="text-danger text-opacity-75 mt-2 mb-2">{{producto.Categoria}}</h6>
+                        <h5 class="text-primary mt-2 mb-2">{{producto.nombre}}</h5>
+                        <h6 class="text-primary mt-2 mb-2">{{producto.Precio}}</h6>
+                   </a>
+                    </div>
+                    <div class="col-3 position-relative" *ngIf="this.producto.Cantidad_stock === 0">
+                        <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                            <div class="img-hover" style=" position: relative;  ">
+                                <img style="position: relative; " class=" img-fluid"
+                                    src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
+                                <img style="position: absolute; transition: all 300ms; left: 0px; right: 100px;"
+                                    class=" img-t img-fluid" src="../../../assets/recursos/recursos/{{producto.Img2}}"
+                                    alt="">
+                            </div>
+                        </a>    
+                        <h6 class="text-danger text-opacity-75 mt-2 mb-2">{{producto.Categoria}}</h6>
+                        <h5 class="text-primary mt-2 mb-2">{{producto.nombre}}</h5>
+                        <button
+                            class="btn text-primary btn-light rounded-pill px-3 position-absolute top-0 end-0 mx-3 mt-2"
+                            type="button" disabled>OUT OF STOCK</button>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+</div>

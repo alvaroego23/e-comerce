@@ -12,3 +12,13 @@
         margin-bottom: 0px;
     }    
     .mi-input::placeholder { color: #ffffff };
+
+    
+    .img-hover:hover .img-t{
+        opacity: 0;  
+         
+     }
+     .img-instagram:hover{
+        filter: opacity(.5);
+
+     }
