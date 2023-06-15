@@ -7,7 +7,7 @@
             <div class="position-absolute bottom-0 start-0 ms-5 mb-2">
                 <h1 class="text-light">JUMPSUITS</h1>
                 <h6 class="text-light">Confortable clothes for your little babies </h6>
-                <button type="button" (click)="products()" class="btn btn-light text-primary">
+                <button type="button"  class="btn btn-light text-primary">
                     <h6 class="jumbotom">DISCOVER</h6>
                 </button>
             </div>
@@ -184,7 +184,7 @@
                     <ng-container *ngFor="let producto of productos">
                         <ng-container *ngIf="this.producto.id === item ">
                             <div class="col-4 mb-5" *ngIf="this.producto.Cantidad_stock > 0 ">                               
-                                <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                                <a href="/productos/{{producto.id}}" class="link-offset-2 link-underline link-underline-opacity-0">
                                     <div class="img-hover" style=" position: relative;  ">
                                         <img style="position: relative; " class=" img-fluid"
                                             src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
@@ -199,7 +199,7 @@
                                 </a>
                             </div>
                             <div class="col-4 mb-5 position-relative" *ngIf="this.producto.Cantidad_stock === 0">
-                                <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                                <a href="/productos/{{producto.id}}" class="link-offset-2 link-underline link-underline-opacity-0">
                                     <div class="img-hover" style=" position: relative;  ">
                                         <img style="position: relative; " class=" img-fluid"
                                             src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">

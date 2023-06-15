@@ -13,7 +13,7 @@ export class ServiciosProductService {
   consultar_Productos():Observable<any>{
     return this.servicio.get(`${this.servidor}/products`);
   }
-
+  
   consultar_Productos_babys():Observable<any>{
     return this.servicio.get(`${this.servidor}/babys`);
   }
@@ -25,5 +25,8 @@ export class ServiciosProductService {
   }
   consultar_Productos_home():Observable<any>{
     return this.servicio.get(`${this.servidor}/home`);
+  }
+  obtener_producto_id(id:string):Observable<any>{
+    return this.servicio.get(`${this.servidor}/products?id=${id}`);
   }
 }

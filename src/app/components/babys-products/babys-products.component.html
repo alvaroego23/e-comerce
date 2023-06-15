@@ -36,7 +36,7 @@
             <div class="row justify-content-evenly text-center">
                 <ng-container *ngFor="let producto of productos">
                     <div class="col-3" *ngIf="this.producto.Cantidad_stock > 0">
-                        <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <a href="/productos/{{producto.id}}" class="link-offset-2 link-underline link-underline-opacity-0">
                             <div class="img-hover" style=" position: relative;  ">
                                 <img style="position: relative; " class=" img-fluid"
                                     src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">
@@ -50,7 +50,7 @@
                         </a>
                     </div>
                     <div class="col-3 position-relative" *ngIf="this.producto.Cantidad_stock === 0">
-                        <a href="/productos" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <a href="/productos/{{producto.id}}" class="link-offset-2 link-underline link-underline-opacity-0">
                             <div class="img-hover" style=" position: relative;  ">
                                 <img style="position: relative; " class=" img-fluid"
                                     src="../../../assets/recursos/recursos/{{producto.Img1}}" alt="">

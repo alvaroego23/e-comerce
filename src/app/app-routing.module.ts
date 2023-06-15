@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'productos/home', component:HomeProductsComponent},
   {path:'productos/plays', component:PlayProductsComponent},
   {path:'productos/girls', component:GirlsProductsComponent},
-  {path:'productos', component:PaginaProductoComponent},
+  {path:'productos/:id', component:PaginaProductoComponent},
   {path:'', component:ResultadoBusquedaComponent},
   
 ];
